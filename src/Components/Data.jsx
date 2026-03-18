@@ -147,6 +147,62 @@ export const experienceData = [
     },
 ];
 
+export const projectData = [
+    {
+        projectName: "Connect App",
+        companyName: "Singleinterface",
+        duration: "06/2022 - 03/2024",
+        description: `Built a mobile solution for local businesses to manage digital presence, operations,
+                        and customer engagement, featuring dashboards, order tracking, user management,
+                        notifications, and optimised in-app performance.`
+    },
+    {
+        projectName: "Bharat Shop App",
+        companyName: "Singleinterface",
+        duration: "04/2023 - 09/2023",
+        description: `Developed a customisable eCommerce solution for local retailers, building core
+                        backend modules, scaling functions, and integrating catalog, checkout, pricing logic,
+                        and business workflows.`
+    },
+    {
+        projectName: "AIRBNB-STYLE HOTEL PLATFORM (Suedtirol)",
+        companyName: "Virtual Employee",
+        duration: "12/2021 - 03/2022",
+        description: `Built a map-based hotel search with real-time listing-marker sync, dynamic data
+                        loading, interactive markers, and optimised geo-search performance.`
+    },
+    {
+        projectName: "POSTNORD SHIPMENT INTEGRATION",
+        companyName: "Cedcoss",
+        duration: "05/2020 - 03/2021",
+        description: `Developed modules for booking, tracking, label generation (PDF/ZPL), and returns,
+                        integrating CN22/CN23 customs forms and multi-location service APIs.`
+    },
+    {
+        projectName: "RAZORPAY PAYMENT INTEGRATION",
+        companyName: "Cedcoss",
+        duration: "08/2018 - 06/2019",
+        description: `Implemented secure mobile payments with full transaction handling, including
+                        callbacks, status updates, and order reconciliation workflows.`
+    },
+    {
+        projectName: "Active Click Funnel",
+        companyName: "Ace Softronics",
+        duration: "06/2017 - 05/2018",
+        description: `A web-based platform that tracks and analyses user clicks across websites, offering
+                        user dashboards, real-time reports, and admin management with a fully responsive
+                        design.`
+    },
+    {
+        projectName: "Website & API Designing",
+        companyName: "Wizvista",
+        duration: "10/2016 - 03/2017",
+        description: `Developed and customised multiple responsive websites and APIs with dynamic
+                        content integration, interactive layouts, and admin panels for content management,
+                        including projects like WizVista, NN Ayurvedic, and St. Monica School.`
+    },
+];
+
 export const contactData = {
     email: "sahu1807deeksha@gmail.com",
     mobile: "+91 9044219290",
