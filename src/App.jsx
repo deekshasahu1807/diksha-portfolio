@@ -1,5 +1,6 @@
+import { motion } from "framer-motion";
 
-import { useRef } from "react";
+import Navbar from "./Components/Common/Navbar";
 
 import Heading from "./Components/Heading";
 import About from "./Components/About";
@@ -9,27 +10,32 @@ import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 
-export default function App() {
-  const contactRef = useRef(null);
-  const experienceRef = useRef(null);
-  
-  const scrollToContact = () => {
-    contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
-  const scrollToExperience = () => {
-    experienceRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
+export default function Portfolio() {
   return (
-    <div className="bg-black text-white font-sans">
-      <Heading handleContactRef={scrollToContact} handleExperienceRef={scrollToExperience} />
+    <div className="bg-slate-950 text-white font-sans selection:bg-blue-500/30">
+      <Navbar />
+
+      {/* HERO */}
+      <Heading />
+
       <About />
+
+      {/* VALUE */}
       <KeyPoints />
-      <Skills />
-      <Experience ref={experienceRef} />
+
+      {/* PROJECTS */}
       <Projects />
-      <Contact ref={contactRef} />
+
+      {/* TECH STACK */}
+      <Skills />
+
+      {/* EXPERIENCE */}
+      <Experience />
+
+      {/* CONTACT */}
+      <Contact />
+
+      <footer className="text-center text-gray-500 text-sm pb-10">© {new Date().getFullYear()} Diksha Sahu</footer>
     </div>
   );
 }

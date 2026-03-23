@@ -1,21 +1,34 @@
 import { motion } from "framer-motion";
-import { fadeUp, headingData } from "./Data";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
-export default function Heading({ handleContactRef, handleExperienceRef }) {
+import GradientOrb from "./Common/GradientOrb";
+import { container, item, headingData, resumeLink } from "./Common/Data";
+
+export default function Heading() {
     return (
-        <section className="h-screen flex flex-col justify-center items-center text-center px-4">
-            <motion.h1 initial="hidden" animate="show" variants={fadeUp} className="text-5xl md:text-7xl font-bold leading-tight">
-                {headingData.h1} <span className="text-gray-400">{headingData.h1HighlightedText}</span>
-            </motion.h1>
-
-            <motion.p initial="hidden" animate="show" variants={fadeUp} className="mt-6 text-lg text-gray-400 max-w-2xl">
-                {headingData.description}
-            </motion.p>
-
-            <motion.div initial="hidden" animate="show" variants={fadeUp} className="flex gap-6 mt-6">
-                <a href="#" onClick={handleExperienceRef} className="px-6 py-3 bg-white text-black rounded-full">View Work</a>
-                <a href="#" onClick={handleContactRef} className="px-6 py-3 border border-white rounded-full">Contact Me</a>
-            </motion.div>
+        <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden py-16">
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-500/20 via-indigo-500/10 to-purple-500/20" />
+            <GradientOrb />
+            <div className="relative z-10 mx-auto max-w-6xl rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl backdrop-blur-xl md:p-12">
+                <div className="grid md:grid-cols-2 gap-10 items-center">
+                    <motion.div variants={container} initial="hidden" animate="show">
+                        <motion.h1 variants={item} className="text-4xl md:text-7xl font-bold leading-tight mb-4 text-white">
+                            <span className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent">{headingData.name}</span>
+                        </motion.h1>
+                        <motion.h2 variants={item} className="text-xl md:text-3xl text-indigo-300 mb-6 font-semibold">
+                            {headingData.title}
+                        </motion.h2>
+                        <motion.p variants={item} className="text-slate-300 max-w-xl mb-8 text-lg leading-relaxed">
+                            {headingData.description}
+                        </motion.p>
+                        <motion.div variants={item} className="flex gap-4">
+                            <a href="#work" className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 hover:brightness-110 transition text-white font-semibold">View Work</a>
+                            <a href={resumeLink} download className="flex flex-row items-center gap-2 px-8 py-4 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 hover:border-indigo-300/70 transition text-white"><FaCloudDownloadAlt /> Download Resume</a>
+                        </motion.div>
+                    </motion.div>
+                    <div className="relative" />
+                </div>
+            </div>
         </section>
     );
 }
