@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { item } from "./Data.jsx";
 
-export default function ProjectCard({ title, firm, desc, tech }) {
+export default function ProjectCard({ title, firm, desc, tech, link }) {
   return (
         <motion.div
             variants={item}
@@ -10,7 +10,12 @@ export default function ProjectCard({ title, firm, desc, tech }) {
         >
             <div className="h-44 bg-linear-to-br from-slate-800 to-slate-700" />
             <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{title} - {firm}</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                    <a href={link} target="_blank" className="hover:text-blue-500">
+                     {title} 
+                    </a> 
+                     - {firm} 
+                </h3>
                 <p className="text-gray-400 text-sm mb-4">{desc}</p>
                 <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                     {tech.map((t, index) => (

@@ -172,6 +172,7 @@ export const experienceData = [
 export const projectData = [
     {
         projectName: "Connect App",
+        projectLink: "https://play.google.com/store/apps/details?id=com.mvpet",
         companyName: "Singleinterface",
         duration: "06/2022 - 03/2024",
         description: `Built a mobile solution for local businesses to manage digital presence, operations,
@@ -181,6 +182,7 @@ export const projectData = [
     },
     {
         projectName: "Bharat Shop App",
+        projectLink: "https://apps.apple.com/in/app/singleinterface-connect/id6446160951",
         companyName: "Singleinterface",
         duration: "04/2023 - 09/2023",
         description: `Developed a customisable eCommerce solution for local retailers, building core
@@ -190,6 +192,7 @@ export const projectData = [
     },
     {
         projectName: "AIRBNB-STYLE HOTEL PLATFORM (Suedtirol)",
+        projectLink: "#",
         companyName: "Virtual Employee",
         duration: "12/2021 - 03/2022",
         description: `Built a map-based hotel search with real-time listing-marker sync, dynamic data
@@ -198,6 +201,7 @@ export const projectData = [
     },
     {
         projectName: "POSTNORD SHIPMENT INTEGRATION",
+        projectLink: "https://cedcommerce.com/prestashop-extensions/",
         companyName: "Cedcoss",
         duration: "05/2020 - 03/2021",
         description: `Developed modules for booking, tracking, label generation (PDF/ZPL), and returns,
@@ -206,6 +210,7 @@ export const projectData = [
     },
     {
         projectName: "RAZORPAY PAYMENT INTEGRATION",
+        projectLink: "https://cedcommerce.com/opencart-extensions/",
         companyName: "Cedcoss",
         duration: "08/2018 - 06/2019",
         description: `Implemented secure mobile payments with full transaction handling, including
@@ -214,6 +219,7 @@ export const projectData = [
     },
     {
         projectName: "Active Click Funnel",
+        projectLink: "",
         companyName: "Ace Softronics",
         duration: "06/2017 - 05/2018",
         description: `A web-based platform that tracks and analyses user clicks across websites, offering
@@ -223,6 +229,7 @@ export const projectData = [
     },
     {
         projectName: "Website & API Designing",
+        projectLink: "",
         companyName: "Wizvista",
         duration: "10/2016 - 03/2017",
         description: `Developed and customised multiple responsive websites and APIs with dynamic

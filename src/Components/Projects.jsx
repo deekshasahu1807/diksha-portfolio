@@ -14,9 +14,9 @@ export default function Projects() {
                             <h2 className="text-3xl md:text-4xl font-bold text-white">Featured Work</h2>
                             <p className="mt-2 text-sm text-slate-300 md:text-base">A selection of recent projects showcasing design, frontend, and full-stack development excellence.</p>
                         </div>
-                        <a href="#" className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:border-sky-300 hover:bg-sky-500/20 hover:text-sky-200">
+                        {/* <a href="#" className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:border-sky-300 hover:bg-sky-500/20 hover:text-sky-200">
                             View all projects
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 
@@ -25,6 +25,7 @@ export default function Projects() {
                         <ProjectCard
                             key={index}
                             title={project.projectName}
+                            link={project.projectLink}
                             firm={project.companyName}
                             desc={project.description}
                             tech={project.technologies}
