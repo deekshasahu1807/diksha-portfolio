@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { skillsData, skillCategories } from "./Common/Data";
+import { skillsData } from "./Common/Data";
 import Section from "./Common/Section";
+
+import SkillsSection from "./Common/SkillsModal";
 
 export default function Skills() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -53,7 +55,9 @@ export default function Skills() {
                             </button>
                         </div>
 
-                        <div className="max-h-[60vh] overflow-y-auto pr-3">
+                        <SkillsSection />
+
+                        {/* <div className="max-h-[60vh] overflow-y-auto pr-3">
                             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                                 {skillCategories.map((category) => (
                                     <div key={category.title} className="rounded-xl border border-white/10 bg-white/5 p-4">
@@ -66,8 +70,9 @@ export default function Skills() {
                                     </div>
                                 ))}
                             </div>
-                        </div>
-
+                        </div> */}
+                        
+                        
                         <div className="mt-6 text-right">
                             <button
                                 type="button"

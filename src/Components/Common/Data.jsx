@@ -106,108 +106,101 @@ export const skillsData = [
 ];
 
 export const skillCategories = [
-  {
+    {
     title: "AI & Developer Productivity",
     items: [
-      "ChatGPT",
-      "GitHub Copilot",
-      "Cursor",
-      "Claude"
-    ]
-  },
-  {
-    title: "Frontend Engineering",
-    items: [
-      "React Native",
-      "JavaScript (ES6+)",
-      "HTML5",
-      "CSS3",
-      "Bootstrap",
-      "AJAX",
-      "jQuery (Legacy)"
+      { name: "ChatGPT", level: "Expert" },
+      { name: "GitHub Copilot", level: "Expert" },
+      { name: "Cursor", level: "Advanced" },
+      { name: "Claude", level: "Advanced" }
     ]
   },
   {
     title: "Backend Engineering",
     items: [
-      "Node.js",
-      "PHP",
-      "Laravel",
-      "CakePHP",
-      "Zend",
-      "Phalcon",
-      "C#"
+      { name: "Node.js", level: "Advanced" },
+      { name: "PHP", level: "Expert" },
+      { name: "Laravel", level: "Advanced" },
+      { name: "CakePHP", level: "Advanced" },
+      { name: "Zend", level: "Intermediate" },
+      { name: "Phalcon", level: "Intermediate" },
+      { name: "C#", level: "Beginner" }
     ]
   },
   {
-    title: "Mobile Development",
+    title: "Frontend Engineering",
     items: [
-      "Android",
-      "iOS"
-    ]
-  },
-  {
-    title: "State Management",
-    items: [
-      "Redux",
-      "Redux Saga"
-    ]
-  },
-  {
-    title: "API & Integration",
-    items: [
-      "RESTful APIs",
-      "JWT Authentication",
-      "Push Notifications",
-      "Third-party Integrations",
-      "Google Analytics (GTM)"
-    ]
-  },
-  {
-    title: "Cloud & DevOps",
-    items: [
-      "AWS Lambda",
-      "SQS",
-      "Firebase",
-      "Docker",
-      "CI/CD"
-    ]
-  },
-  {
-    title: "Databases",
-    items: [
-      "MySQL",
-      "SQL Server"
+      { name: "React Native", level: "Expert" },
+      { name: "JavaScript (ES6+)", level: "Expert" },
+      { name: "HTML5", level: "Advanced" },
+      { name: "CSS3", level: "Advanced" },
+      { name: "Bootstrap", level: "Advanced" },
+      { name: "AJAX", level: "Advanced" },
+      { name: "jQuery (Legacy)", level: "Expert" }
     ]
   },
   {
     title: "Tools & Collaboration",
     items: [
-      "Git",
-      "Bitbucket",
-      "Postman",
-      "VS Code",
-      "Agile",
-      "Scrum",
-      "Code Reviews",
-      "Sprint Planning"
+      { name: "Git", level: "Expert" },
+      { name: "Bitbucket", level: "Advanced" },
+      { name: "Postman", level: "Expert" },
+      { name: "VS Code", level: "Expert" },
+      { name: "Agile", level: "Advanced" },
+      { name: "Scrum", level: "Advanced" },
+      { name: "Code Reviews", level: "Expert" },
+      { name: "Sprint Planning", level: "Advanced" }
+    ]
+  },
+  {
+    title: "State Management",
+    items: [
+      { name: "Redux", level: "Advanced" },
+      { name: "Redux Saga", level: "Advanced" }
+    ]
+  },
+  {
+    title: "Databases",
+    items: [
+      { name: "MySQL", level: "Expert" },
+      { name: "SQL Server", level: "Advanced" }
     ]
   },
   {
     title: "CMS & eCommerce",
     items: [
-      "WordPress",
-      "PrestaShop",
-      "OpenCart"
+      { name: "WordPress", level: "Advanced" },
+      { name: "PrestaShop", level: "Advanced" },
+      { name: "OpenCart", level: "Intermediate" }
+    ]
+  },
+  {
+    title: "Cloud & DevOps",
+    items: [
+      { name: "AWS Lambda", level: "Expert" },
+      { name: "SQS", level: "Advanced" },
+      { name: "Firebase", level: "Advanced" },
+      { name: "Docker", level: "Intermediate" },
+      { name: "CI/CD", level: "Advanced" }
+    ]
+  },
+  {
+    title: "API & Integration",
+    items: [
+      { name: "RESTful APIs", level: "Expert" },
+      { name: "JWT Authentication", level: "Advanced" },
+    //   { name: "Push Notifications", level: "Advanced" },
+      { name: "Third-party Integrations", level: "Expert" },
+      { name: "Google Analytics (GTM)", level: "Advanced" }
     ]
   },
   {
     title: "Capabilities",
     items: [
-      "Push Notifications",
-      "Real-time Data Sync",
-      "Scalable API Architecture",
-      "Authentication Systems"
+      { name: "Push Notifications", level: "Advanced" },
+      { name: "Real-time Data Sync", level: "Advanced" },
+      { name: "Scalable API Architecture", level: "Expert" },
+      { name: "Authentication Systems", level: "Expert" }
     ]
   }
 ];
