@@ -1,7 +1,10 @@
-import { skillsData } from "./Common/Data";
+import { useState } from "react";
+import { skillsData, skillCategories } from "./Common/Data";
 import Section from "./Common/Section";
 
 export default function Skills() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <Section id="stack" className="relative overflow-hidden py-16">
             <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-orange-500/20 via-amber-500/10 to-yellow-500/20" />
@@ -14,6 +17,7 @@ export default function Skills() {
                         Technologies and tools I use to bring ideas to life, from frontend to backend and beyond.
                     </p>
                 </div>
+
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
                     {skillsData.map((skill) => (
                         <div key={skill.name} className="group flex flex-row items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm text-gray-300 transition hover:-translate-y-1 hover:border-amber-300/70 hover:bg-amber-500/20 hover:text-white hover:shadow-lg">
@@ -22,7 +26,60 @@ export default function Skills() {
                         </div>
                     ))}
                 </div>
+
+                <div className="mt-8 text-center">
+                    <button
+                        type="button"
+                        onClick={() => setIsModalOpen(true)}
+                        className="rounded-full border border-amber-300/70 bg-amber-500/20 px-6 py-2 text-sm font-semibold text-amber-200 transition hover:bg-amber-500/40 hover:text-white"
+                    >
+                        View More
+                    </button>
+                </div>
             </div>
+
+            {isModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-slate-950/80 p-4">
+                    <div className="w-full max-w-4xl max-h-[calc(100vh-2rem)] overflow-hidden rounded-2xl border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-6">
+                        <div className="mb-4 flex items-start justify-between">
+                            <h3 className="text-xl font-bold text-white sm:text-2xl">Key Skills Summary</h3>
+                            <button
+                                type="button"
+                                onClick={() => setIsModalOpen(false)}
+                                className="rounded-full px-2 py-1 text-lg text-slate-300 transition hover:bg-white/10 hover:text-white"
+                                aria-label="Close modal"
+                            >
+                                ✕
+                            </button>
+                        </div>
+
+                        <div className="max-h-[60vh] overflow-y-auto pr-3">
+                            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                                {skillCategories.map((category) => (
+                                    <div key={category.title} className="rounded-xl border border-white/10 bg-white/5 p-4">
+                                        <h4 className="text-lg font-semibold text-amber-300">{category.title}</h4>
+                                        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-100">
+                                            {category.items.map((item) => (
+                                                <li key={item}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="mt-6 text-right">
+                            <button
+                                type="button"
+                                onClick={() => setIsModalOpen(false)}
+                                className="rounded-md bg-amber-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-amber-400"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </Section>
     );
 }

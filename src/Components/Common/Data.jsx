@@ -105,6 +105,113 @@ export const skillsData = [
     }
 ];
 
+export const skillCategories = [
+  {
+    title: "AI & Developer Productivity",
+    items: [
+      "ChatGPT",
+      "GitHub Copilot",
+      "Cursor",
+      "Claude"
+    ]
+  },
+  {
+    title: "Frontend Engineering",
+    items: [
+      "React Native",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "AJAX",
+      "jQuery (Legacy)"
+    ]
+  },
+  {
+    title: "Backend Engineering",
+    items: [
+      "Node.js",
+      "PHP",
+      "Laravel",
+      "CakePHP",
+      "Zend",
+      "Phalcon",
+      "C#"
+    ]
+  },
+  {
+    title: "Mobile Development",
+    items: [
+      "Android",
+      "iOS"
+    ]
+  },
+  {
+    title: "State Management",
+    items: [
+      "Redux",
+      "Redux Saga"
+    ]
+  },
+  {
+    title: "API & Integration",
+    items: [
+      "RESTful APIs",
+      "JWT Authentication",
+      "Push Notifications",
+      "Third-party Integrations",
+      "Google Analytics (GTM)"
+    ]
+  },
+  {
+    title: "Cloud & DevOps",
+    items: [
+      "AWS Lambda",
+      "SQS",
+      "Firebase",
+      "Docker",
+      "CI/CD"
+    ]
+  },
+  {
+    title: "Databases",
+    items: [
+      "MySQL",
+      "SQL Server"
+    ]
+  },
+  {
+    title: "Tools & Collaboration",
+    items: [
+      "Git",
+      "Bitbucket",
+      "Postman",
+      "VS Code",
+      "Agile",
+      "Scrum",
+      "Code Reviews",
+      "Sprint Planning"
+    ]
+  },
+  {
+    title: "CMS & eCommerce",
+    items: [
+      "WordPress",
+      "PrestaShop",
+      "OpenCart"
+    ]
+  },
+  {
+    title: "Capabilities",
+    items: [
+      "Push Notifications",
+      "Real-time Data Sync",
+      "Scalable API Architecture",
+      "Authentication Systems"
+    ]
+  }
+];
+
 export const experienceData = [
     {
         company: "SingleInterface Pvt Ltd",
