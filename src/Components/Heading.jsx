@@ -4,9 +4,11 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import GradientOrb from "./Common/GradientOrb";
 import { container, item, headingData, resumeLink } from "./Common/Data";
 
+import Section from "./Common/Section";
+
 export default function Heading() {
     return (
-        <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden py-16">
+        <Section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden py-16">
             <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-blue-500/20 via-indigo-500/10 to-purple-500/20" />
             <GradientOrb />
             <div className="relative z-10 mx-auto max-w-6xl rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl backdrop-blur-xl md:p-12">
@@ -29,6 +31,6 @@ export default function Heading() {
                     <div className="relative" />
                 </div>
             </div>
-        </section>
+        </Section>
     );
 }

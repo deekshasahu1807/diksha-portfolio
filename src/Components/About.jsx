@@ -1,8 +1,9 @@
 import { aboutData } from "./Common/Data";
+import Section from "./Common/Section";
 
 export default function About() {
     return (
-        <section id="about" className="relative overflow-hidden py-16">
+        <Section id="about" className="relative overflow-hidden py-16">
             <div className="pointer-events-none absolute inset-0 " />
             <div className="relative z-10 mx-auto max-w-6xl rounded-3xl border border-white/10 bg-slate-900/70 p-8 shadow-2xl backdrop-blur-xl md:p-12">
                 <div className="text-center mb-8">
@@ -12,6 +13,6 @@ export default function About() {
                 </div>
                 <p className="text-lg leading-relaxed text-slate-300">{aboutData}</p>
             </div>
-        </section>
+        </Section>
     );
 }

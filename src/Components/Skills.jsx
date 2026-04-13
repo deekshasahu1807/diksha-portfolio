@@ -22,7 +22,7 @@ export default function Skills() {
 
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
                     {skillsData.map((skill) => (
-                        <div key={skill.name} className="group flex flex-row items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm text-gray-300 transition hover:-translate-y-1 hover:border-amber-300/70 hover:bg-amber-500/20 hover:text-white hover:shadow-lg">
+                        <div key={skill.name} className="group flex flex-row items-left justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm text-gray-300 transition hover:-translate-y-1 hover:border-amber-300/70 hover:bg-amber-500/20 hover:text-white hover:shadow-lg">
                             {skill.icon}
                             <span className="ml-2">{skill.name}</span>
                         </div>
@@ -56,22 +56,6 @@ export default function Skills() {
                         </div>
 
                         <SkillsSection />
-
-                        {/* <div className="max-h-[60vh] overflow-y-auto pr-3">
-                            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-                                {skillCategories.map((category) => (
-                                    <div key={category.title} className="rounded-xl border border-white/10 bg-white/5 p-4">
-                                        <h4 className="text-lg font-semibold text-amber-300">{category.title}</h4>
-                                        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-100">
-                                            {category.items.map((item) => (
-                                                <li key={item}>{item}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                ))}
-                            </div>
-                        </div> */}
-                        
                         
                         <div className="mt-6 text-right">
                             <button
